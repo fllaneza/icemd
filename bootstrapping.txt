@@ -1,0 +1,1 @@
+#!bin/bashsudo apt-get updatesudo apt install -y python3-pippip3 install jupyterexport PATH=~/.local/bin:$PATHjupyter notebook --generate-configsed -ie "s/#c.Notebook.ip = 'localhost'/#c.Notebook.ip = '*'/g" ~/.jupyter/jupyter_notebook_config.pypip3 install awscli --upgrade --userexport PATH=~/.local/bin:$PATH

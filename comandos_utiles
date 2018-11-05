@@ -1,0 +1,15 @@
+- Instalar AWS CLI
+	pip install awscli --upgrade --user
+
+- Conexión ssh: 
+	sudo ssh -i icemd.pem ubuntu@ec2-18-202-243-222.eu-west-1.compute.amazonaws.com
+
+- Subir fichero: 
+	scp -i EMRDesarrolloKey.pem predicciones_churn_gbt.csv hadoop@52.17.225.208:/var/lib/zeppelin/ 
+ 
+- Bajar fichero:
+	scp -r -i EMRDesarrolloKey.pem hadoop@52.17.225.208:/var/lib/zeppelin/ . 
+
+- Log de instalaciones previas
+	 /var/log/cloud-init-output.log 
+
