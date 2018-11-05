@@ -1,15 +1,23 @@
-- Instalar AWS CLI
-	pip install awscli --upgrade --user
 
 - Conexión ssh: 
 	sudo ssh -i icemd.pem ubuntu@ec2-18-202-243-222.eu-west-1.compute.amazonaws.com
 
-- Subir fichero: 
-	scp -i EMRDesarrolloKey.pem predicciones_churn_gbt.csv hadoop@52.17.225.208:/var/lib/zeppelin/ 
+- Subir fichero a EC2: 
+	scp -i icemd.pem datos.csv ubuntu@ec2-18-202-243-222.eu-west-1.compute.amazonaws.com
  
-- Bajar fichero:
-	scp -r -i EMRDesarrolloKey.pem hadoop@52.17.225.208:/var/lib/zeppelin/ . 
+- Bajar fichero a EC2:
+	scp -r -i icemd.pem ubuntu@ec2-18-202-243-222.eu-west-1.compute.amazonaws.com . 
 
 - Log de instalaciones previas
 	 /var/log/cloud-init-output.log 
+
+- Instalar miniconda3
+	curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+	bash Miniconda3-latest-Linux-x86_64.sh
+
+- Exportar entorno conda 
+	conda list --explicit > spec-file.txt
+
+- Crear entorno conda a partir de spec-file.txt
+	conda create --name myenv --file spec-file.txt
 
