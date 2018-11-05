@@ -21,3 +21,6 @@
 - Crear entorno conda a partir de spec-file.txt
 	conda create --name myenv --file spec-file.txt
 
+- Override sudo
+	sudo() { command sudo env PATH="$PATH" "$@"; }
+
