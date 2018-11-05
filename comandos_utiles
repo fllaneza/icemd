@@ -24,3 +24,8 @@
 - Override sudo
 	sudo() { command sudo env PATH="$PATH" "$@"; }
 
+- HTTP Requests 
+	@post
+	curl --data '{"Sepal.Width":4, "Petal.Length":5, "Petal.Width": 5}' http://34.245.186.52/predict
+	curl -H "Content-Type: application/json" -d "@query.json" -X POST http://34.245.186.52/predict
+
