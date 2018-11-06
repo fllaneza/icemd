@@ -1,14 +1,13 @@
-import numpy as np
 import pandas as pd
 from sklearn.externals import joblib
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    json_ = request.json
-    query = pd.DataFrame(json_).values
+    test_json = request.get_json()
+    query = pd.read_json(test_json, orient = 'records')
     prediction = regr.predict(query)
     return jsonify({'prediction': list(prediction)})
     
