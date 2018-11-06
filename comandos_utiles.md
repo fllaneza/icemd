@@ -1,6 +1,6 @@
 
 * **Conexión ssh:** 
-	sudo ssh -i icemd.pem ubuntu@ec2-18-202-243-222.eu-west-1.compute.amazonaws.com
+sudo ssh -i icemd.pem ubuntu@ec2-18-202-243-222.eu-west-1.compute.amazonaws.com
 
 * **Subir fichero a EC2:**  
 	scp -i icemd.pem datos.csv ubuntu@ec2-18-202-243-222.eu-west-1.compute.amazonaws.com
