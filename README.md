@@ -8,6 +8,7 @@ Está divida en dos secciones:
 * **EC2**: contiene los notebooks con los scripts de Python para aprender a realizar un modelo de Machine Learning y disponibilizarlo como API 
 
 La idea es usar una instancia EC2 para correr los códigos. Los pasos a seguir son los siguientes:   
+
 **1.** Levantar una instancia EC2 y conectarse a ella por SSH como vimos en clase. Por ejemplo: 
 ```
 sudo ssh -i file.pem ubuntu@ec2-18-202-243-222.eu-west-1.compute.amazonaws.com
