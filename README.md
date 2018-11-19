@@ -1,7 +1,7 @@
 # Formación ICEMD
 
 En este repositorio se encuentra la información para realizar la parte práctica de la formación. 
-Está divida en dos secciones:
+Está divida en varias secciones:
 
 * **S3**: contiene los notebooks con los scripts de Python para aprender a manejar las funcionalidades básicas de S3
 
