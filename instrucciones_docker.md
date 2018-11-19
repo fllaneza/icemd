@@ -9,10 +9,6 @@ sudo docker build -t [NOMBRE DEL DOCKER]:[VERSIÓN] .
 sudo docker build -t icemd_app/boston:v0 .
 ```
 
-## 2.
-
-       
-
 **2.** Una vez construida la imagen, para instanciar un contenedor en tiempo de ejecución se utiliza el siguiente comando:
 ```
 sudo docker run -p [PUERTO DEL HOST]:[PUERTO DEL DOCKER] -v [RUTA LOCAL]:[RUTA DEL DOCKER] [NOMBRE DEL DOCKER]:[VERSIÓN]
