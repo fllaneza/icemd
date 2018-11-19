@@ -6,11 +6,18 @@ app = Flask(__name__)
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    test_json = request.get_json()
-    query = pd.read_json(test_json, orient = 'records')
-    prediction = regr.predict(query)
-    return jsonify({'prediction': list(prediction)})
+    if request.method == 'POST':
+        try:
+            data = request.get_json()
+            query = pd.DataFrame.from_dict(data['json_request'])
+            lin_reg = joblib.load('./model.pkl')
+        except ValueError:
+            return jsonify("Input error")
+        
+        return jsonify(lin_reg.predict(query).tolist())
     
 if __name__ == '__main__':
-    regr = joblib.load('model.pkl')
-    app.run(host="0.0.0.0", port=80)
+    app.run(host = '0.0.0.0', port = 9999)
+
+
+

@@ -24,8 +24,9 @@ scp -i icemd.pem datos.csv ubuntu@ec2-18-202-243-222.eu-west-1.compute.amazon
 * **Override sudo:**   
 	sudo() { command sudo env PATH="$PATH" "$@"; }
 
-* **HTTP-POST Requests:**    
-	curl --data '{"CRIM":0.10574,"ZN":0.0,"INDUS":27.74,"CHAS":0.0,"NOX":0.609,"RM":5.983,"AGE":98.8,"DIS":1.8681,"RAD":4.0,"TAX":711.0,"PTRATIO":20.1,"B":390.11,"LSTAT":18.07}' http://34.245.186.52/predict
-	
-	curl -H "Content-Type: application/json" -d "@query.json" -X POST http://34.245.186.52/predict
+* **HTTP POST Request:**   
+	curl -H "Content-Type: application/json" -d "@query.json" -X POST http://127.0.0.1:5000/predict
+
+        
+
 

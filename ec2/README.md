@@ -13,5 +13,5 @@ sudo python app_rl.py
 ```
 y a continuación realizar una petición con el siguiente comando:
 ```
-curl --data '{"CRIM":0.10574,"ZN":0.0,"INDUS":27.74,"CHAS":0.0,"NOX":0.609,"RM":5.983,"AGE":98.8,"DIS":1.8681,"RAD":4.0,"TAX":711.0,"PTRATIO":20.1,"B":390.11,"LSTAT":18.07}' http://X.X.X.X/predict
+curl -H "Content-Type: application/json" -d "@query.json" -X POST http://127.0.0.1:5000/predict
 ```
