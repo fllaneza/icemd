@@ -1,11 +1,13 @@
-# Formación ICEMD: AWS primeros pasos
+# Formación ICEMD
 
 En este repositorio se encuentra la información para realizar la parte práctica de la formación. 
-Está divida en dos secciones:
+Está divida en varias secciones:
 
 * **S3**: contiene los notebooks con los scripts de Python para aprender a manejar las funcionalidades básicas de S3
 
 * **EC2**: contiene los notebooks con los scripts de Python para aprender a realizar un modelo de Machine Learning y disponibilizarlo como API 
+
+* **EMR**: contiene los paths de S3 para lanzar un step de Hive en EMR
 
 La idea es usar una instancia EC2 para correr los códigos. Los pasos a seguir son los siguientes:   
 
