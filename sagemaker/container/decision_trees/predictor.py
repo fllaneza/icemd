@@ -1,6 +1,5 @@
 
 # Este script implementa un servidor con Flask para realizar la inferencia
-####################################################################################################
 
 from __future__ import print_function
 
