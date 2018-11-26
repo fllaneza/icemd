@@ -67,7 +67,7 @@ def transformation():
 
     print('Existen {} registros sobre los que predecir'.format(data.shape[0]))
 
-    # Realia las predicciones
+    # Realiza las predicciones
     predictions = ScoringService.predict(data)
 
     # Convierte de Numpy a CSV

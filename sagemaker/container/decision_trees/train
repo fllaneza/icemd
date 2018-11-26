@@ -3,6 +3,8 @@
 
 # Script genérico para entrenar un árbol de clasificacion de la librería de Machine Learning SciKit-Learn
 
+from __future__ import print_function
+
 import os
 import json
 import pickle
