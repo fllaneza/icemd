@@ -14,10 +14,10 @@ from sklearn import tree
 
 # Estos son los paths que SageMeaker utiliza para montar su estructura
 ROOT_PATH = '/opt/ml/'
-INPUT_PATH = prefix + 'input/data'
-OUTPUT_PATH = os.path.join(prefix, 'output')
-MODEL_PATH = os.path.join(prefix, 'model')
-PARAM_PATH = os.path.join(prefix, 'input/config/hyperparameters.json')
+INPUT_PATH = ROOT_PATH + 'input/data'
+OUTPUT_PATH = os.path.join(ROOT_PATH, 'output')
+MODEL_PATH = os.path.join(ROOT_PATH, 'model')
+PARAM_PATH = os.path.join(ROOT_PATH, 'input/config/hyperparameters.json')
 
 # Este algoritmo tiene un único canal de input llamado 'training'. 
 CHANNEL_NAME = 'training'
