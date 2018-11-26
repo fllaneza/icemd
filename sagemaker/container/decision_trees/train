@@ -49,7 +49,7 @@ def train():
     if max_leaf_nodes is not None:
         max_leaf_nodes = int(max_leaf_nodes)
 
-    min_samples_split = trainingParams.get('min_samples_split', None)
+    min_samples_split = trainingParams.get('min_samples_split', 2)
     if min_samples_split is not None:
         min_samples_split = int(min_samples_split)
 

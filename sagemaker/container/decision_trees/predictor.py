@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 # Este script implementa un servidor con Flask para realizar la inferencia
 
