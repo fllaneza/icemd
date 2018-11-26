@@ -1,5 +1,5 @@
-# coding=utf-8
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # Script genérico para entrenar un árbol de clasificacion de la librería de Machine Learning SciKit-Learn
 
