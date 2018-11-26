@@ -14,4 +14,4 @@ WORKDIR /usr/local/project
 EXPOSE 9999
 
 # Run -------------------------------------------------------
-CMD ["python","app_rl.py"]
+CMD ["python", "app_rl.py"]
